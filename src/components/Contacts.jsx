@@ -5,15 +5,15 @@ export default function Contacts(props) {
   return (
     <div>
       <center>
-        <h1>Contact List</h1>
+        <h1>Corona Tracker</h1>
       </center>
       {props.contacts.results.map((contact) => (
         <div class="card">
           <div class="card-body">
-            <p class="card-text">{contact.total_cases}</p>
-            <p class="card-text">{contact.total_recovered}</p>
-            <p class="card-text">{contact.total_deaths}</p>
-            <p class="card-text">{contact.total_affected_countries}</p>
+            <p class="card-text">Total Number of Cases : {contact.total_cases}</p>
+            <p class="card-text">Total Recoveries : {contact.total_recovered}</p>
+            <p class="card-text">Toatal Daeths : {contact.total_deaths}</p>
+            <p class="card-text">Total Number of Affected Countries : {contact.total_affected_countries}</p>
           </div>
         </div>
       ))}
